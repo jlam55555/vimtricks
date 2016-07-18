@@ -1,5 +1,10 @@
 # Vim Configuration Sources
 
+This is a modern customization for Vim. It uses Airline with the flat color schemes Tomorrow-Night and Wombat (for Airline). You can see an image of it below.
+
+## Preview
+![Preview](http://imgur.com/Wydxv6Nl.png)
+
 ## Download Sources
 
 ### Appearance
