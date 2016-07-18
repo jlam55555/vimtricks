@@ -1,9 +1,17 @@
 # Vim Configuration Sources
 
-This is a modern customization for Vim. It uses Airline with the flat color schemes Tomorrow-Night and Wombat (for Airline). You can see an image of it below.
+## Overview
+
+This is a modern customization for Vim in Ubuntu. It uses Airline with the flat color schemes Tomorrow-Night and Wombat (for Airline). You can see an image of it below.
+
+This can add on to your current settings for Vim, or it can be used to customize Vim from scratch.
+
+## Inspiration
+
+I just set up my Vim this way and I thought it looked pretty cool. If I ever need to reproduce it, this repo is here for me!
 
 ## Preview
-![Preview](http://imgur.com/Wydxv6Nl.png)
+![Preview](http://i.imgur.com/aSNYHTz.png)
 
 ## Download Sources
 
