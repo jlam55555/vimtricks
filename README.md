@@ -3,20 +3,20 @@
 ## Download Sources
 
 ### Appearance
-- **Syntax Highlighting**: [Tomorrow-Night](https://github.com/chriskempson/tomorrow-theme/)
+- Syntax Highlighting: [Tomorrow-Night](https://github.com/chriskempson/tomorrow-theme/)
 
 ### Airline
-- **Airline**: [Airline](https://github.com/vim-airline/vim-airline) 
-- **Theme**: [Wombat](https://github.com/vim-airline/vim-airline-themes)
-- **Powerline Font**: [Droid Sans Mono (Powerline patch)](https://github.com/powerline/fonts)
-- **Git Branch**: [Fugitive](https://github.com/tpope/vim-fugitive)
+- Airline: [Airline](https://github.com/vim-airline/vim-airline) 
+- Theme: [Wombat](https://github.com/vim-airline/vim-airline-themes)
+- Powerline Font: [Droid Sans Mono (Powerline patch)](https://github.com/powerline/fonts)
+- Git Branch: [Fugitive](https://github.com/tpope/vim-fugitive)
 
 ### Installer
-- **Pathogen**: [Pathogen](https://github.com/tpope/vim-pathogen)
+- Pathogen: [Pathogen](https://github.com/tpope/vim-pathogen)
 
 ## Installation
 
-1. Install Pathogen
+1. **Install Pathogen**
 
     ```
     mkdir -p ~/.vim/autoload ~/.vim/bundle
@@ -30,7 +30,7 @@
     execute pathogen#helptags()
     ```
 
-2. Install Airline and Airline Themes (via Pathogen)
+2. **Install Airline and Airline Themes (via Pathogen)**
 
     ```
     cd ~/.vim/bundle
@@ -45,7 +45,7 @@
     let g:airline_theme='wombat'
     ```
 
-3. Install Powerline Font
+3. **Install Powerline Font**
 
     ```
     git clone https://www.github.com/powerline/fonts
@@ -60,7 +60,7 @@
     let g:airline_powerline_fonts=1
     ```
 
-4. Install Fugitive (optional, only for Git users)
+4. **Install Fugitive (optional, only for Git users)**
 
     ```
     cd ~/.vim/bundle
@@ -75,7 +75,7 @@
     let g:airline#extensions#branch#enabled=1
     ```
 
-5. Install the Tommorow-Night theme
+5. **Install the Tommorow-Night theme**
 
     ```
     mkdir ~/.vim/colors
@@ -94,7 +94,7 @@
     colorscheme Tomorrow-Night
     ```
 
-6. Touch up with more customizations to the `.vimrc`
+6. **Touch up with more customizations to the `.vimrc`**
 
     ```
     set number        " add line numbers
@@ -106,6 +106,7 @@
 ## Collated Scripts and `.vimrc`
 
 ### Scripts:
+
 ```
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
@@ -129,21 +130,14 @@ rm -rf tomorrow-theme
 ### `.vimrc`:
 
 ```
-" basic styles
 set number
 set tabstop=2
 set shiftwidth=2
 set expandtab
-
-" color scheme
 syntax on
 set t_Co=256
 colorscheme Tomorrow-Night
-
-" looks nicer with code
 set scrolloff=5
-
-" airline code
 set laststatus=2
 execute pathogen#infect()
 execute pathogen#helptags()
